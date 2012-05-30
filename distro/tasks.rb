@@ -26,7 +26,7 @@ def create_fakeroot
 		args << " -c --program-suffix=1.8.7ee"
 	end
 	
-	sh "#{distdir}/installer --auto='/usr/local' --destdir='#{fakeroot}' #{args}"
+	sh "#{distdir}/installer --auto='/opt/ree' --destdir='#{fakeroot}' #{args}"
 	puts "*** Ruby Enterprise Edition has been installed to #{fakeroot}"
 end
 
